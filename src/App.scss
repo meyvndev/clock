@@ -1,0 +1,162 @@
+/*
+ ________  ________  ___       ___       ___  ________   ___  __    _______   ________     
+|\   ____\|\   __  \|\  \     |\  \     |\  \|\   ___  \|\  \|\  \ |\  ___ \ |\   __  \    
+\ \  \___|\ \  \|\  \ \  \    \ \  \    \ \  \ \  \\ \  \ \  \/  /|\ \   __/|\ \  \|\  \   
+ \ \  \    \ \   __  \ \  \  __\ \  \  __\ \  \ \  \\ \  \ \   ___  \ \  \_|/_\ \   ____\  
+  \ \  \____\ \  \ \  \ \  \|\__\_\  \|\__\_\  \ \  \\ \  \ \  \\ \  \ \  \_|\ \ \  \___|  
+   \ \_______\ \__\ \__\ \____________\________\ \__\\ \__\ \__\\ \__\ \_______\ \__\     
+    \|_______|\|__|\|__|\|____________|\________|\|__| \|__|\|__| \|__|\|_______|\|__|     
+                                            \|_____|                                     
+                                                                                           
+Crafted with ❤️ by Meyvn
+
+🌐 IG: @meyvndev | Twitter: @meyvnagency | YouTube: [https://youtube.com/@wearemeyvn]
+📧 Email: info.meyvn@gmail.com
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.4s ease;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f8ff;
+  padding: 0 20px;
+
+  &.dark {
+    background: #24292d;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    max-width: 560px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+
+    &.dark {
+      background: #323840;
+    }
+
+    .icons i {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      height: 30px;
+      width: 30px;
+      background: #24292d;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      font-size: 14px;
+      cursor: pointer;
+
+      &.dark {
+        background: #fff;
+        color: #323840;
+      }
+
+      &.fa-sun {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &.dark.fa-sun {
+        opacity: 1;
+        pointer-events: auto;
+        font-size: 16px;
+      }
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+
+      .time-colon {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .am_pm {
+          position: absolute;
+          top: 0;
+          right: -50px;
+          font-size: 20px;
+          font-weight: 700;
+          letter-spacing: 1px;
+
+          &.dark {
+            color: #fff;
+          }
+        }
+
+        .time-text {
+          height: 100px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background: #f0f8ff;
+          border-radius: 6px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+          &.dark {
+            background: #24292d;
+          }
+
+          &,
+          .colon {
+            font-size: 35px;
+            font-weight: 600;
+
+            &.dark {
+              color: #fff;
+            }
+          }
+
+          .num,
+          .colon {
+            color: #000;
+
+            &.dark {
+              color: #fff;
+            }
+          }
+
+          .colon {
+            font-size: 40px;
+            margin: 0 10px;
+          }
+
+          .text {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+
+            &.dark {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
